@@ -1,0 +1,23 @@
+@keyframes letterReveal {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    20%,
+    80% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(100%);
+    }
+  }
+  
+  .reveal-animation {
+    opacity: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-flex;
+    animation: letterReveal 3s infinite 2s alternate ;
+  }
