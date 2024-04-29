@@ -3,11 +3,14 @@
   import Login from './Pages/Login/Login';
   import Signup from './Pages/Signup/Signup';
   import WelcomePage from './Pages/Welcome/Welcome'
-  import { useState } from 'react';
+  import { useEffect, useState } from 'react';
 import Basic from './Pages/Basics/Basics';
 
   function App() {
     const [users, setUsers] = useState([]);
+    useEffect(() => {
+      localStorage.setItem('users', JSON.stringify(users));
+    }, [users]);
     console.log(users)
     return (
       <BrowserRouter>
