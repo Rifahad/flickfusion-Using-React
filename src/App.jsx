@@ -1,27 +1,16 @@
-  import { BrowserRouter, Route, Routes } from 'react-router-dom';
-  import './App.css';
-  import Login from './Pages/Login/Login';
-  import Signup from './Pages/Signup/Signup';
-  import WelcomePage from './Pages/Welcome/Welcome'
-  import { useEffect, useState } from 'react';
-import Basic from './Pages/Basics/Basics';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Home from "./Pages/Home";
 
-  function App() {
-    const [users, setUsers] = useState([]);
-    useEffect(() => {
-      localStorage.setItem('users', JSON.stringify(users));
-    }, [users]);
-    console.log(users)
-    return (
-      <BrowserRouter>
-        <Routes>
-          <Route path='/basic' element={<Basic/>}/>
-          <Route path="/" element={<Login users={users} />} />
-          <Route path="/signup" element={<Signup users={users} setUsers={setUsers} />} />
-          <Route path='/welcome' element={<WelcomePage />}/>
-        </Routes>
-      </BrowserRouter>
-    );
-  }
+function App() {
 
-  export default App;
+  return (
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
