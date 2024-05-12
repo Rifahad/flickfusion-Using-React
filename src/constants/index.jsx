@@ -3,35 +3,42 @@
   export const navigation = [
     {
       id: "0",
-      title: "Features",
-      url: "#features",
+      title: "Home",
+      url: "#Home",
     },
     {
       id: "1",
-      title: "Pricing",
-      url: "#pricing",
+      title: "Action",
+      url: "/action",
     },
     {
       id: "2",
-      title: "How to use",
-      url: "#how-to-use",
+      title: "Comedy",
+      url: "/comedy",
     },
     {
       id: "3",
-      title: "Roadmap",
-      url: "#roadmap",
-    },
+      title: "Adventure",
+      url: "/adventure",
+    },  
     {
       id: "4",
+      title: "About",
+      url: "/about",
+    },
+
+    {
+      id: "5",
       title: "New account",
-      url: "#signup",
+      url: "/signup",
       onlyMobile: true,
     },
     {
-      id: "5",
+      id: "6",
       title: "Sign in",
-      url: "#login",
+      url: "/login",
       onlyMobile: true,
     },
+    
   ];
   

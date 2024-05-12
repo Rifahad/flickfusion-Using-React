@@ -1,10 +1,11 @@
-import React from 'react'
-// import Demo from "../assets/demo.mp4";
+import Image from "../assets/2170.jpg";
+// import Demo from "../assets/multifandom.mp4";
 
 function BackgroundVid() {
   return (
-    <div className=' h-screen absolute bg-cover overflow-hidden'>
-      {/* <video src={Demo} autoplay loop	muted ></video > */}
+    <div className=' w-full h-screen absolute top-0 bg-cover bg-no-repeat bg-center overflow-hidden -z-10'>
+      {/* <video src={Demo} autoPlay loop	muted className='opacity-95'></video > */}
+      <img src={Image} className="h-full w-full" alt="" srcset="" />
     </div>
   )
 }

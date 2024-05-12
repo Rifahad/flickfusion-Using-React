@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-import  Johnwick  from "../assets/Logo.png";
 import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
@@ -35,7 +34,7 @@ function Header() {
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a className="block w-[12rem] xl:mr-8" href="#hero">
-          <img src={Johnwick} width={90} height={40} alt="Johnwick" />
+          <h1 className="font-extrabold text-4xl font-code text-white">FlixFusion</h1>
         </a> 
 
         <nav
@@ -65,7 +64,7 @@ function Header() {
           <HamburgerMenu />
         </nav>
         <a
-          href="#signup"
+          href="/signup"
           className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
         >
           New account
