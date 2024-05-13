@@ -1,25 +1,23 @@
-
-  
-  export const navigation = [
+export const navigation = [
     {
       id: "0",
       title: "Home",
-      url: "#Home",
+      url: "/",
     },
     {
       id: "1",
       title: "Action",
-      url: "/action",
+      url: "/genre",
     },
     {
       id: "2",
       title: "Comedy",
-      url: "/comedy",
+      url: "/genre",
     },
     {
       id: "3",
       title: "Adventure",
-      url: "/adventure",
+      url: "/genre",
     },  
     {
       id: "4",

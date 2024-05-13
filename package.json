@@ -13,13 +13,14 @@
     "@headlessui/react": "^1.7.19",
     "antd": "^5.17.0",
     "chart.js": "^4.4.2",
-    "formik": "^2.4.5",
+    "formik": "^2.4.6",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
-    "react-router-dom": "^6.22.3",
-    "scroll-lock": "^2.1.5"
+    "react-router-dom": "^6.23.1",
+    "scroll-lock": "^2.1.5",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
