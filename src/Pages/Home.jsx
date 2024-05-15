@@ -7,11 +7,13 @@ import Adventure from "../assets/Categories/Adventure.jpg";
 
 import Gun from "../assets/gun.png";
 import GunRight from "../assets/gunRight.png";
+import { SideLines } from "../Components/design/Header";
 
 const Home = () => {
   return (
     <>
       <div className="w-lvw">
+      <SideLines/> 
         <Banner />
         <div className="w-full  flex justify-center items-center mb-20">
           <div className=" w-[250px] h-[400px] md:w-[1600px]  rounded-xl flex-col">

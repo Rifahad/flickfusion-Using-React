@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import { Rings, SideLines } from "../Components/design/Header";
 import ButtonGradient from "../assets/svg/ButtonGradient";
 
 
@@ -10,9 +9,7 @@ function UserLayout() {
   return (
     <div>
       <ButtonGradient />
-        {/* <Rings/> */}
          <BackgroundVid/>
-        <SideLines/> 
         <Header/>
       <Outlet/>
 
