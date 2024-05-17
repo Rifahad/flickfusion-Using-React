@@ -6,23 +6,21 @@ import UserLayout from "./Layout/UserLayout";
 import Login from "./Pages/Login";
 import About from "./Pages/About";
 import Genre from "./Pages/Genre";
+import AddMovie from "./Pages/AddMovie";
 
 function App() {
-
   return (
     <BrowserRouter>
-    <Routes>
-    <Route path="/" element={<UserLayout />}>
-      <Route path="/" element={<Home />} />
-      <Route path="/signup" element={< Signup />} />
-      <Route path="/login" element={< Login />} />
-      <Route path="/about" element={< About />} />
-      <Route path="/genre" element={< Genre />} />
-
-    </Route>
-
-
-    </Routes>
+      <Routes>
+        <Route path="/" element={<UserLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/genre" element={<Genre />} />
+          <Route path="/admin/addMovie" element={<AddMovie />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }
