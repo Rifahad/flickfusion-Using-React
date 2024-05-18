@@ -7,6 +7,7 @@ import Login from "./Pages/Login";
 import About from "./Pages/About";
 import Genre from "./Pages/Genre";
 import AddMovie from "./Pages/AddMovie";
+import DetailedView from "./Pages/DetailedView";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/genre" element={<Genre />} />
           <Route path="/admin/addMovie" element={<AddMovie />} />
+          <Route path="/details" element={<DetailedView />} />
         </Route>
       </Routes>
     </BrowserRouter>

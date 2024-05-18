@@ -1,21 +1,25 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import  movieValidationSchema  from "../Utility/MovieValidation";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { v4 as uuidv4 } from 'uuid';
 
 
 const AddMovie = () => {
   const dispatch =useDispatch()
+  const navigate =useNavigate()
   const handleSubmit = (values, { setSubmitting }) => {
-    console.log("Form values:", values);
     dispatch({type:'Movies',payload:values})
-    setSubmitting(false);
+    setSubmitting(false)
+    navigate('/')
   };
-
+  const id=uuidv4(5)
   return (
     <div className="flex justify-center items-center min-h-screen text-gray-900">
       <div className="w-full max-w-screen-2xl bg-color-1 bg-opacity-10 p-8 rounded-lg shadow-sm shadow-color-1 mt-10 mb-40">
         <Formik
           initialValues={{
+            id:id,
             title: "",
             subtitle: "",
             director: "",
