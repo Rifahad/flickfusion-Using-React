@@ -1,9 +1,14 @@
 import { Form, Input } from "antd";
 import validationSchema from "../Utility/UserValidation.jsx";
 import Btn from "../Components/Button.jsx";
+import {useDispatch} from 'react-redux'
+
 
 const Signup = () => {
+  const dispatch=useDispatch()
+
   const [form] = Form.useForm();
+  console.log(form)
 
   return (
     <div className="flex items-center justify-center w-full h-screen">
@@ -12,28 +17,28 @@ const Signup = () => {
           <Form.Item
             name="firstName"
             label="First Name"
-            rules={[{ validator: validationSchema.fields.firstName }]}
+            // rules={[{ validator: validationSchema.fields.firstName }]}
           >
             <Input placeholder="Please input your first name" />
           </Form.Item>
           <Form.Item
             name="lastName"
             label="Last Name"
-            rules={[{ validator: validationSchema.fields.lastName }]}
+            // rules={[{ validator: validationSchema.fields.lastName }]}
           >
             <Input placeholder="Please input your last name" />
           </Form.Item>
           <Form.Item
             name="email"
             label="Email"
-            rules={[{ validator: validationSchema.fields.email }]}
+            // rules={[{ validator: validationSchema.fields.email }]}
           >
             <Input placeholder="Please input your email" />
           </Form.Item>
           <Form.Item
             name="Password"
             label="Password"
-            rules={[{ validator: validationSchema.fields.Password }]}
+            // rules={[{ validator: validationSchema.fields.Password }]}
           >
             <Input.Password placeholder="Please input your password" />
           </Form.Item>
