@@ -1,5 +1,5 @@
 import { Form, Input } from "antd";
-import validationSchema from "../Utility/Validation";
+import validationSchema from "../Utility/UserValidation.jsx";
 import Btn from "../Components/Button.jsx";
 
 const Signup = () => {
