@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import Card from "../Components/Card";
-import Btn from "../Components/Button";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 import { useSelector, useDispatch } from "react-redux";

@@ -1,4 +1,3 @@
-import Demo from "../assets/Categories/Action.jpg";
 import Btn from "../Components/Button";
 import { FaRegPlayCircle } from "react-icons/fa";
 import { IoIosEye } from "react-icons/io";
@@ -8,11 +7,8 @@ import { useNavigate } from "react-router-dom";
 function Card({
   id,
   title,
-  subtitle,
   director,
-  releaseDate,
   genre,
-  rating,
   description,
   poster,
 }) {
@@ -32,8 +28,8 @@ function Card({
         <p className="text-sm">{director}</p>
       </div>
       <div className="w-100 h-10 flex items-end justify-evenly mt-12">
-        <Btn>{<FaRegPlayCircle />}</Btn>
-        <Btn onClick={() => navigate('/details')}>{<IoIosEye />}</Btn>
+        <Btn >{<FaRegPlayCircle />}</Btn>
+        <Btn href={'/details'}>{<IoIosEye />}</Btn>
       </div>
     </div>
   );

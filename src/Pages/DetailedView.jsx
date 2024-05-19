@@ -1,5 +1,6 @@
 import Image from "../assets/Categories/Action.jpg";
 import { FaPlay } from "react-icons/fa";
+import { IoHomeOutline } from "react-icons/io5";
 
 
 function DetailedView() {
@@ -17,13 +18,13 @@ function DetailedView() {
       </div>
       <div className="w-3/5 h-full rounded-r-lg flex flex-col items-center justify-evenly">
         <h1 className="text-white font-code text-4xl m-4">{findMovie.title}JOHNWICK</h1>
-        <div className="text-white font-code text-xl  px-10 leading-5  text-center">
+        <div className="text-white font-code text-sm  px-10 leading-5  text-center tracking-wide">
           <p>
-            The lead character, called 'The Bride,' was a member of the Deadly Viper Assassination Squad, led by her lover 'Bill.' Upon realizing she was pregnant with Bill's child, 'The Bride' decided to escape her life as a killer. She fled to Texas, met a young man, who, on the day of their wedding rehearsal, was gunned down by....
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quae porro consectetur blanditiis provident eius voluptatibus excepturi tempore sapiente consequatur aut et adipisci ex totam nesciunt ut iusto, iure quod?
           </p>
         
         </div>
-        <div className="pl-10 mt-8">
+        <div className="pl-10 mt-8 flex gap-6">
           <a
             href="https://youtu.be/rR_2ti4l3nM?si=ViyC-JYwOtO4KVGp"
             target="_blank"
@@ -31,6 +32,8 @@ function DetailedView() {
           >
             <FaPlay />WATCH TRAILER
           </a>
+          <button className=" w-[300px] font-code bg-no-repeat bg-size-[12px] px-10 py-2 rounded transition-all duration-500 hover:text-black hover:bg-red-500 flex shadow-color-1 shadow-md"
+          ><IoHomeOutline />Home</button>
         </div>
         <div className="pl-10 pt-2">
           <ul className="list-none flex space-x-10 text-gray-300 font-code text-sm">
